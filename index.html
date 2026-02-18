@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gates Foundation – Strategic Communications Case Study</title>
+    <style>
+        /* --- RESET & BASICS --- */
+        :root {
+            --primary: #C9002B; /* Gates Foundation-ish Red/Brand Color */
+            --dark: #1a1a1a;
+            --light: #f4f4f4;
+            --text: #333;
+            --text-light: #666;
+            --spacing: 4rem;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: #fff;
+        }
+
+        h1, h2, h3 {
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+            color: var(--dark);
+        }
+
+        p { margin-bottom: 1.5rem; }
+        
+        img { width: 100%; height: auto; display: block; }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* --- HEADER --- */
+        header {
+            padding: 6rem 0 4rem;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 3rem;
+            max-width: 800px;
+            margin: 0 auto 1rem;
+        }
+
+        header .subtitle {
+            font-size: 1.25rem;
+            color: var(--text-light);
+        }
+
+        /* --- SECTION 1: STRATEGIC BRIEF --- */
+        .strategic-brief {
+            background-color: var(--light);
+            padding: var(--spacing) 0;
+            text-align: center;
+        }
+
+        .brief-table-placeholder {
+            background: #fff;
+            border: 2px dashed #ccc;
+            color: #999;
+            padding: 3rem;
+            margin-bottom: 1.5rem;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            min-height: 300px;
+        }
+
+        .caption {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            font-style: italic;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* --- SECTION 2: THE CHALLENGE --- */
+        .challenge {
+            padding: var(--spacing) 0;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        .challenge h2 { font-size: 2rem; margin-bottom: 1.5rem; border-left: 4px solid var(--primary); padding-left: 1rem; }
+        .challenge p { font-size: 1.1rem; }
+
+        /* --- SECTION 3: STRATEGIC FRAMEWORK --- */
+        .framework {
+            padding: var(--spacing) 0;
+        }
+
+        .framework-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+
+        @media(min-width: 768px) {
+            .framework-grid { grid-template-columns: 1fr 1fr; }
+            .framework-header { grid-column: 1 / -1; }
+        }
+
+        .visual-block {
+            margin-bottom: 2rem;
+        }
+        
+        .visual-block img {
+            border-radius: 4px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            margin-bottom: 0.5rem;
+        }
+
+        /* --- SECTION 4: EXECUTION GRID --- */
+        .execution {
+            background-color: var(--dark);
+            color: #fff;
+            padding: var(--spacing) 0;
+        }
+
+        .execution h2 { color: #fff; text-align: center; margin-bottom: 3rem; }
+
+        .execution-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 2rem;
+        }
+
+        .execution-card {
+            background: rgba(255,255,255,0.05);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .execution-card h3 { color: var(--primary); font-size: 1.2rem; margin-bottom: 0.5rem; }
+        .execution-card .asset-name { font-weight: bold; display: block; margin-bottom: 1rem; font-size: 1.1rem; }
+        .execution-card .role { font-size: 0.9rem; color: #ccc; }
+        
+        .execution-card img {
+            margin: 1rem 0;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 4px;
+            opacity: 0.8;
+        }
+
+        /* --- SECTION 5 & 6: PITCH & DOWNLOAD --- */
+        .pitch-process {
+            padding: var(--spacing) 0;
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .pitch-process h2 { font-size: 2rem; }
+        
+        .btn-download {
+            display: inline-block;
+            background-color: var(--primary);
+            color: #fff;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: background 0.3s ease;
+            margin-top: 2rem;
+        }
+
+        .btn-download:hover { background-color: #a00022; }
+
+        /* --- FOOTER --- */
+        footer {
+            text-align: center;
+            padding: 2rem;
+            font-size: 0.8rem;
+            color: var(--text-light);
+            border-top: 1px solid #eee;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="container">
+        <p class="subtitle">Case Study</p>
+        <h1>Gates Foundation – Strategic Communications for Primary Health Care (PHC) Advocacy</h1>
+    </header>
+
+    <section class="strategic-brief">
+        <div class="container">
+            <div class="brief-table-placeholder">
+                [Insert "The Strategic Brief" Table Here]
+            </div>
+            <p class="caption">"The strategic brief that guided our integrated communications campaign. My role was to lead the visual translation of this framework into a compelling, multi-channel narrative."</p>
+        </div>
+    </section>
+
+    <section class="challenge container">
+        <h2>The Challenge</h2>
+        <p>The Gates Foundation needed to increase donor investment in Primary Health Care (PHC) while simultaneously driving grassroots adoption in local communities. The challenge was twofold: speak to high-level policymakers and donors in language they trust, while reaching rural Nigerians with stories they feel.</p>
+    </section>
+
+    <section class="framework container">
+        <div class="framework-grid">
+            <div class="visual-block framework-header">
+                <img src="https://via.placeholder.com/1000x500/eee/999?text=Page+5:+Crafting+The+Narrative" alt="Crafting the Narrative Strategy">
+                <p class="caption">Strategic Approach: Crafting the Narrative</p>
+            </div>
+            
+            <div class="visual-block">
+                <img src="https://via.placeholder.com/600x400/eee/999?text=Page+7:+The+Big+Idea" alt="My Healthy Nigeria Starts With PHC">
+                <p class="caption">The Big Idea: "My Healthy Nigeria, Starts With PHC"</p>
+            </div>
+            <div class="visual-block">
+                <img src="https://via.placeholder.com/600x400/eee/999?text=Page+9:+Creative+Territories" alt="Creative Territories">
+                <p class="caption">Creative Territories & Visual Direction</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="execution">
