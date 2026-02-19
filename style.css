@@ -1,0 +1,55 @@
+/* Layout Containers */
+.case-study-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.overview-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two-column layout for desktop */
+    gap: 40px;
+    margin-top: 60px;
+}
+
+/* Typography from your Style Guide */
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700; /* Keeping headings bold as per your current CSS */
+    line-height: 1.1;
+}
+
+.section-label {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* Services Grid (The colored boxes) */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.card {
+    padding: 20px;
+    height: 150px;
+    color: white;
+    font-weight: 600;
+    display: flex;
+    align-items: flex-end;
+}
+
+.orange { background-color: #f27a41; }
+.purple { background-color: #a832ff; }
+/* Add other colors as needed */
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .overview-grid, .services-grid {
+        grid-template-columns: 1fr; /* Stack elements on mobile */
+    }
+}
